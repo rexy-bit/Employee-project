@@ -1,0 +1,122 @@
+.liste-section{
+
+    display : flex;
+    flex-direction: column;
+    justify-content : center;
+    align-items: center;
+    width : 100%;
+    background-color: #8DBCC7;
+    padding-top: 100px;
+}
+
+.liste-section-title{
+    font-size: 3em;
+    text-decoration: underline;
+
+}
+
+.inputs,.emp{
+    display: grid;
+    grid-template-columns: 100px 200px 250px 100px 150px 100px;
+    column-gap: 20px;
+}
+.emp{
+   
+    align-items: center;
+    padding-top: 20px;
+    font-size : 18px;
+}
+.display-content{
+    padding-bottom : 50px;
+}
+
+.display-error-message{
+    font-size: 18px;
+    color : red;
+    width : 300px;
+    font-weight: bold;
+}
+.display-success-message{
+    font-size: 18px;
+    color : green;
+    width : 300px;
+    font-weight: bold;
+}
+
+.inp{
+    padding : 10px;
+    font-size: 15px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+.add-button,.delete-button{
+    background-color: #0B1D51;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: opacity 0.25s;
+}
+.delete-button{
+    height: 40px;
+    background-color: red;
+}
+.add-button:hover,.delete-button:hover{
+    opacity: 0.8;
+}
+.add-button:active,.delete-button:hover{
+    opacity: 0.6;
+}
+
+
+@media(max-width : 1090px){
+
+    .inputs{
+        column-gap: 10px;
+
+    }
+}
+@media (max-width : 1000px){
+    .inputs,.emp{
+        display : flex;
+        flex-direction: column;
+        gap : 20px;
+        padding: 15px;
+        border : 3px solid black;
+        margin-bottom : 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    .emp{
+        padding : 30px;
+        font-size : 30px;
+        font-weight: 600;
+    }
+    .inp{
+        width : 300px;
+    }
+    .add-button{
+        width : 100px;
+        height : 40px;
+    }
+}
+@media(max-width){
+    .emp{
+         padding : 10px;
+        font-size : 20px;
+        font-weight: 600;
+    }
+}
+@media(max-width : 530px){
+    .inp{
+        width : 230px;
+    }
+    .emp{
+         padding : 10px;
+        font-size : 15px;
+        font-weight: 550;
+    }
+}

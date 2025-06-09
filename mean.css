@@ -1,0 +1,54 @@
+.mean-section{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #AEC8A4;
+    width: 100%;
+}
+
+.mean-title{
+    font-size: 3em;
+    text-decoration: underline;
+    padding-top: 40px;
+}
+.mean-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+.display-mean{
+    height : 45px;
+    width : 150px;
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mean-button{
+    background-color: green;
+    height: 45px;
+    width : 95px;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.mean-button:hover{
+    opacity: 0.8;
+}
+
+.mean-button:active{
+    opacity: 0.6;
+}
+
+
